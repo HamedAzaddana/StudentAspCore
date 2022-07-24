@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+        <div class="text-center">
+
+            <h1 class="display-4 text-center">سیستم مدیریت دانش آموزان</h1>
+            <br />
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn btn-success text-white" asp-controller="Students" asp-action="Index">لیست دانش آموزان</a>
+            }
+            else
+            {
+               <p class="text-center">وارد سیستم نشده اید . </p>
+            }
+
+        </div>
+
+

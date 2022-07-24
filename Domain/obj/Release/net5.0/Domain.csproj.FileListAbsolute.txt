@@ -1,0 +1,15 @@
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\bin\Release\net5.0\Domain.deps.json
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\bin\Release\net5.0\Domain.runtimeconfig.json
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\bin\Release\net5.0\Domain.runtimeconfig.dev.json
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\bin\Release\net5.0\Domain.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\bin\Release\net5.0\ref\Domain.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\bin\Release\net5.0\Domain.pdb
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.csproj.AssemblyReference.cache
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.AssemblyInfoInputs.cache
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.AssemblyInfo.cs
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.csproj.CoreCompileInputs.cache
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\ref\Domain.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.pdb
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\Domain\obj\Release\net5.0\Domain.genruntimeconfig.cache

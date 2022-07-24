@@ -1,0 +1,150 @@
+﻿@model IEnumerable<Domain.Entities.Student>
+
+@{
+    ViewData["Title"] = "لیست دانش آموزان";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <style>
+        .pagination2 {
+            display: inline-block
+        }
+
+            .pagination2 a {
+                color: #000;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid gray;
+                border-radius: 30px
+            }
+
+                .pagination2 a.active {
+                    background-color: green;
+                    color: #fff
+                }
+
+                .pagination2 a:hover:not(.active) {
+                    background-color: #ddd
+                }
+    </style>
+}
+
+<h1>لیست دانش آموزان</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-info fload-right">ایجاد دانش آموز</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodeMeli)
+            </th>
+            <th>
+                عکس
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodeMeli)
+                </td>
+                <td>
+                    @if (@item.ImgPath != null)
+                    {
+                        <img style="width:75px;height:75px;border-radius:10px;" src="@DirectoryManager.GetStudentImage(item.ImgPath)" alt="عکس @item.FirstName @item.LastName" />
+                    }
+                </td>
+                <td>
+                    @{
+                        var birthPers = DatePersian.ToJalaliShow(item.BirthDate);
+                    }
+
+                    @birthPers
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">ویرایش</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">حذف</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="text-center">
+    <p class="text-center">
+        تعداد : @ViewBag.StudentsNums
+    </p>
+
+    @{
+        int pageNumber = (ViewBag.Paged);
+        string hidden_class_prev = (pageNumber == 1) ? ("d-none") : ("");
+        string hidden_class_next = (pageNumber == ViewBag.last_page_num) ? ("d-none") : ("");
+
+    }
+    <div class="pagination2" style="padding:10px;">
+        <a class="pagins  @hidden_class_prev" href="#" id="prev_page_click">&raquo;</a>
+        @for (var i = 1; i <= ViewBag.links_num; i++)
+        {
+
+            var activeLink = (pageNumber == i) ? ("active") : ("");
+
+            <a href="@ViewBag.CurrentUrl?paged=@i" class="pagins @activeLink">
+                @i
+            </a>
+        }
+        <a class="pagins @hidden_class_next" href="#" id="next_page_click">&laquo;</a>
+    </div>
+
+    @{
+        var paged_next = pageNumber + 1;
+        var paged_prev = pageNumber - 1;
+        var next_url = ViewBag.CurrentUrl + "?paged=" + paged_next;
+        var prev_url = ViewBag.CurrentUrl + "?paged=" + paged_prev;
+
+    }
+    @section Scripts {
+        <script>
+            var urls_pagin = {
+                next_url: "@next_url",
+                prev_url: "@prev_url"
+            }
+            $('#next_page_click').click(function () {
+                event.preventDefault();
+                window.location.href = urls_pagin.next_url;
+
+            })
+
+            $('#prev_page_click').click(function () {
+                event.preventDefault();
+                window.location.href = urls_pagin.prev_url;
+
+            })
+        </script>
+    }
+
+
+
+</div>
+
+

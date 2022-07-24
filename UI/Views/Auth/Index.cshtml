@@ -1,0 +1,39 @@
+﻿@*@model UI.Models.LoginViewModel*@
+
+@{
+    ViewData["Title"] = "ورود";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+        @if (TempData["error"] != null)
+        {
+            <p class="text-danger">@TempData["error"]</p>
+            <br />
+        }
+        <h1>@ViewData["Title"]</h1>
+
+        <form method="post" action="/Auth/Login">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="نام کاربری" name="Username" id="Username" />
+
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="کلمه عبور" name="password" id="password" />
+
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary" value="ورود" />
+            </div>
+        </form>
+        <span>
+            جدول مدیران نداریم، فقط یک کاربر:
+            <br />
+            نام کاربری : StudentAdmin
+            <br />
+            رمز: OJHD*39y
+
+        </span>
+  
+
+

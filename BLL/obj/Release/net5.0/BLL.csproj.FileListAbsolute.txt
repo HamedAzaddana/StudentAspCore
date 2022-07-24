@@ -1,0 +1,17 @@
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\BLL.deps.json
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\BLL.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\ref\BLL.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\BLL.pdb
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\DAL.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\Domain.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\DAL.pdb
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\bin\Release\net5.0\Domain.pdb
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.csproj.AssemblyReference.cache
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.AssemblyInfoInputs.cache
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.AssemblyInfo.cs
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.csproj.CoreCompileInputs.cache
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.csproj.CopyComplete
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\ref\BLL.dll
+D:\ALL-TUTORS\Modern\test\aspnc1\Hamedtt1\BLL\obj\Release\net5.0\BLL.pdb
