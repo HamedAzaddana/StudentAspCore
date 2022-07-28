@@ -37,7 +37,7 @@
 
                 var birthPers = DatePersian.ToJalali(Model.BirthDate);
             }
-     
+
 
             <div class="form-group">
                 <label asp-for="BirthDate" class="control-label"></label>
@@ -97,7 +97,7 @@
                 var this_day = (new persianDate(unix).algorithms.State.persian.day);
 
                 this_year = parseInt(this_year);
-                this_month = parseInt(this_month);
+                this_month = parseInt(this_month) + 1;
                 this_day = parseInt(this_day);
                 var str = this_year + "-" + this_month + "-" + this_day;
                 $('input#BirthDate').val(str)

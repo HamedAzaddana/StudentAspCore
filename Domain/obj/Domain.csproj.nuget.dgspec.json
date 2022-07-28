@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\Domain.csproj": {}
+    "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\Domain.csproj": {
+    "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\Domain.csproj",
+        "projectPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\obj\\",
+        "outputPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft_visual_studio\\3\\NuGetPackages",

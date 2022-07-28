@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9FCvmbTPDz+a9mtUft6p67j0lVpi7t9EtI3zQjQ0/9OKjoYaAyl9wKrO3y5VDhzdbhsb6NeUbYaEEc8Xjbfgmg==",
+  "dgSpecHash": "FjCivx7mg/1PW3u7ox4GI0XiuJNEpeiOGmiG2N8u8k19X9SpLt9Eny0ic+pVpGM9gL3qkZ4SWkrxJkNDvAAmsw==",
   "success": true,
-  "projectFilePath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YIim1qSZRTLTa0FGeBLQHJ1qjskaz3u1cmlanFHgdWmeDYYbkDqqK8G67/GIPFK65u+JijaMUbf1mQVYTpHHvg==",
+  "dgSpecHash": "GwVry90ktqoOU2jtrqutWUO2J2prE5pmZbLRm80jtgDWNpG5IXr968AysvnNBWRUHXIvI0ObWPq+r6UKVFqILg==",
   "success": true,
-  "projectFilePath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\UI\\UI.csproj",
+  "projectFilePath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

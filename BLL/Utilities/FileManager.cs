@@ -11,8 +11,7 @@ namespace BLL.Utilities
     {
         public static void RemoveFile(string fileName, string savePath)
         {
-            if (fileName == null)
-                throw new Exception("File Is Null");
+       
             var folderPath = Path.Combine(Directory.GetCurrentDirectory(), savePath.Replace("/", "\\"));
             if (!Directory.Exists(folderPath))
             {

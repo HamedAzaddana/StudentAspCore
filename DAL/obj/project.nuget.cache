@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GL1793KVZOKcJzuEDKepHTAxoMF6FEZ+6BK5zhOAJMCvtGShNqPFWhd8pyKdgk0/Dt6M1RIl1Y+68910yYzVZA==",
+  "dgSpecHash": "/c6el3vQ63wVZz6VjH8gIl7EhJpVDXStKzH5Yg4ruLTCf79HZ5ndHzf20oaPrFt+MPn6ZVZBMcl3KqB+OuexjQ==",
   "success": true,
-  "projectFilePath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\DAL\\DAL.csproj",
+  "projectFilePath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",

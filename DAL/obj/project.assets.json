@@ -6245,11 +6245,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\DAL\\DAL.csproj",
+      "projectPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\DAL\\obj\\",
+      "outputPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft_visual_studio\\3\\NuGetPackages",
@@ -6272,8 +6272,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1\\Domain\\Domain.csproj"
+            "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\ALL-TUTORS\\Modern\\test\\aspnc1\\Hamedtt1Api\\Domain\\Domain.csproj"
             }
           }
         }

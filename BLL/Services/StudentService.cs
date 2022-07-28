@@ -3,6 +3,7 @@ using BLL.Utilities;
 using DAL.DataContext;
 using DAL.ViewModels;
 using Domain.Entities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,10 +40,50 @@ namespace BLL.Services
             _context.SaveChanges();
             return true;
         }
+        public void uploadPic_API(string codeMeli, IFormFile PictureFile)
+        {
+            var student = GetByCodeMeli(codeMeli);
+            if (student != null)
+            {
+                var lastPic = student.ImgPath;
+                if (lastPic != null)
+                {
+                    FileManager.RemoveFile(lastPic, DirectoryManager.StudentImage);
+                }
+                string imgpath = FileManager.SaveFileAndReturnName(PictureFile, DirectoryManager.StudentImage);
+                student.ImgPath = imgpath;
+                _context.Update(student);
+                _context.SaveChanges();
+            }
+        }
+        public bool Store_API(StudentCreateViewModel_API studentVM)
+        {
 
+            Student student = new Student
+            {
+                FirstName = studentVM.FirstName,
+                LastName = studentVM.LastName,
+                CodeMeli = studentVM.CodeMeli,
+            };
+
+            //var BirthDate = studentVM.BirthDate;
+            //int birthYear = Int32.Parse(BirthDate.Year.ToString());
+            //int birthMonth = Int32.Parse(BirthDate.Month.ToString());
+            //int birthDay = Int32.Parse(BirthDate.Day.ToString());
+            //var BirthMiladi = DatePersian.ToMiladi(birthYear, birthMonth, birthDay);
+            student.BirthDate = studentVM.BirthDate;
+            _context.Add(student);
+            _context.SaveChanges();
+            return true;
+        }
         public bool DeleteById(long ID)
         {
             var student = _context.Students.Find(ID);
+            var lastPic = student.ImgPath;
+            if (lastPic != null)
+            {
+                FileManager.RemoveFile(lastPic, DirectoryManager.StudentImage);
+            }
             _context.Students.Remove(student);
             _context.SaveChanges();
             return true;
@@ -58,7 +99,10 @@ namespace BLL.Services
             student.CodeMeli = studentVM.CodeMeli;
             if (PictureFile != null)
             {
-                FileManager.RemoveFile(studentVM.LastPicPath, DirectoryManager.StudentImage);
+                if (studentVM.LastPicPath != null)
+                {
+                    FileManager.RemoveFile(studentVM.LastPicPath, DirectoryManager.StudentImage);
+                }
                 string imgpath = FileManager.SaveFileAndReturnName(PictureFile, DirectoryManager.StudentImage);
                 student.ImgPath = imgpath;
             }
@@ -82,6 +126,7 @@ namespace BLL.Services
             var list = _context.Students.OrderByDescending(s => s.ID).ToList();
             return list;
         }
+
 
         public Student GetByCodeMeli(string codemeli)
         {
@@ -120,8 +165,14 @@ namespace BLL.Services
         public Student GetById(long ID)
         {
 
-            var student = _context.Students.Find(ID);
+            var student = _context.Students.Where(s => s.ID == ID).FirstOrDefault();
             return student;
+        }
+        public bool StudentExists(long ID)
+        {
+
+            var student = _context.Students.Where(s => s.ID == ID).FirstOrDefault();
+            return (student != null);
         }
 
 
